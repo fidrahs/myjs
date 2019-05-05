@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO-DO</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+        <!------ Include the above in your HEAD tag ---------->
+        
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="todolist not-done">
+                     <h1>Todos</h1>
+                        <input type="text" class="form-control add-todo" placeholder="Add todo">
+                            <button id="checkAll" class="btn btn-success">Mark all as done</button>
+                            
+                            <hr>
+                            <ul id="sortable" class="list-unstyled">
+                            <li class="ui-state-default">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" />Take out the trash</label>
+                                </div>
+                            </li>
+                            <li class="ui-state-default">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" />Buy bread</label>
+                                </div>
+                            </li>
+                            <li class="ui-state-default">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" />Teach penguins to fly</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="todo-footer">
+                            <strong><span class="count-todos"></span></strong> Items Left
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="todolist">
+                     <h1>Already Done</h1>
+                        <ul id="done-items" class="list-unstyled">
+                            <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
